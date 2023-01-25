@@ -21,10 +21,6 @@ body {
    font-family: 'DM Sans', sans-serif;
    height: 100vh;
    background-color: var(--Cream);
-   overflow: hidden;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 img {
@@ -56,9 +52,10 @@ img {
 
 .main {
    display: flex;
-   height: 100vh;
+   height: 100%;
    align-items: center;
    justify-content: center;
+   min-height: 640px;
    min-width: 367px;
 }
 
