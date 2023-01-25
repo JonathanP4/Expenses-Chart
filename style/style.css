@@ -22,6 +22,7 @@ body {
    min-width: 367px;
    height: 100vh;
    width: 100vw;
+   min-height: 670px;
    background-color: var(--Cream);
    display: flex;
    align-items: center;
@@ -56,7 +57,8 @@ img {
 /*===========================*/
 
 .main__container {
-   width: 55.2vmax;
+   width: 97%;
+   /* 55.2vmax; */
    max-width: 470px;
    max-height: 653px;
    display: grid;
