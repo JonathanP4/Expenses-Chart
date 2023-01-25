@@ -1,0 +1,160 @@
+:root {
+   --Soft-red: hsl(10, 79%, 65%);
+   --Cyan: hsl(186, 34%, 60%);
+   --Dark-brown: hsl(25, 47%, 15%);
+   --Medium-brown: hsl(28, 10%, 53%);
+   --Cream: hsl(27, 66%, 92%);
+   --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*,
+*::before,
+*::after {
+   -webkit-tap-highlight-color: transparent;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: 18px;
+   font-family: 'DM Sans', sans-serif;
+   min-width: 367px;
+}
+
+img {
+   max-width: 100%;
+}
+
+/*=========Typography=========*/
+.chart--title {
+   font-size: 1.8rem;
+}
+
+.last--month,
+.this--month {
+   color: var(--Medium-brown);
+}
+
+.text--percentage {
+   color: var(--Dark-brown);
+   font-weight: 700;
+}
+
+.day {
+   color: var(--Medium-brown);
+   font-size: 1rem;
+   margin: .9rem 0;
+}
+
+/*===========================*/
+
+.main {
+   height: 100vh;
+   width: 100vw;
+   min-height: 670px;
+   min-width: 367px;
+   background-color: var(--Cream);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__container {
+   width: 55.2vmax;
+   max-width: 470px;
+   max-height: 653px;
+   display: grid;
+   gap: 1rem;
+}
+
+.balance__container {
+   background-color: var(--Soft-red);
+   color: var(--Very-pale-orange);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.5rem 1.2rem;
+   border-radius: .6rem;
+}
+
+.chart__wrapper {
+   background-color: var(--Very-pale-orange);
+   color: var(--Dark-brown);
+   border-radius: .6rem;
+   padding: 1.5rem 1.2rem;
+}
+
+.chart__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin: 0 0 2rem 0;
+   height: 43vh;
+   max-height: 300px;
+   min-height: 250px;
+   border-bottom: 1px solid var(--Medium-brown);
+}
+
+.chart-text__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.chart-text__container:nth-child(n+1) {
+   text-align: right;
+}
+
+.chart {
+   display: flex;
+   flex-flow: column wrap;
+   margin: 0;
+   padding: 0;
+   width: 37px;
+   border-radius: 3px;
+   background-color: var(--Soft-red);
+   cursor: pointer;
+}
+
+.chart__item {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.chart:hover {
+   transition: 300ms;
+   transform: scaleX(110%);
+}
+
+.chart__item {
+   text-align: center;
+}
+
+.chart__2 {
+   background-color: var(--Cyan);
+}
+
+.amount {
+   position: absolute;
+   font-size: 1rem;
+   color: var(--Very-pale-orange);
+   background-color: var(--Dark-brown);
+   padding: .4rem;
+   border-radius: .4rem;
+   margin-bottom: .6rem;
+   top: -39px;
+}
+
+.invisible {
+   display: none;
+}
+
+@media screen and (min-width: 970px) {
+   .main__container {
+      width: 70vmin;
+   }
+}
