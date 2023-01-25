@@ -19,8 +19,14 @@
 body {
    font-size: 18px;
    font-family: 'DM Sans', sans-serif;
+   height: 100vh;
+   width: 100vw;
+   min-height: 640px;
    min-width: 367px;
-   overflow: hidden;
+   background-color: var(--Cream);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 img {
@@ -50,20 +56,8 @@ img {
 
 /*===========================*/
 
-.main {
-   height: 100vh;
-   width: 100vw;
-   min-height: 640px;
-   min-width: 367px;
-   background-color: var(--Cream);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
 .main__container {
-   width: 391px;
-   max-width: 470px;
+   width: 375px;
    max-height: 653px;
    display: grid;
    gap: 1rem;
@@ -156,6 +150,6 @@ img {
 
 @media screen and (min-width: 970px) {
    .main__container {
-      width: 70vmin;
+      width: 470px;
    }
 }
