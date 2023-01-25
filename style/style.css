@@ -14,6 +14,7 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   outline: 1px solid red;
 }
 
 body {
@@ -22,11 +23,6 @@ body {
    min-width: 367px;
    height: 100vh;
    width: 100vw;
-   min-height: 670px;
-   background-color: var(--Cream);
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 img {
@@ -56,9 +52,19 @@ img {
 
 /*===========================*/
 
+.main {
+   height: 100%;
+   width: 100%;
+   min-height: 640px;
+   min-width: 367px;
+   background-color: var(--Cream);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .main__container {
-   width: 97%;
-   /* 55.2vmax; */
+   width: 95%;
    max-width: 470px;
    max-height: 653px;
    display: grid;
